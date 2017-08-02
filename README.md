@@ -1,11 +1,10 @@
 # Transactions Processor
 
 ### Summary
-Suppose you are part of a scrum team developing a component _Transaction Processor_ that process financial transactions, the component shall check if the transactions loaded are balanced or not; the balanced transactions means that sum of 
-Credit transactins must equals the sum of Debit transactions.
+Suppose you are part of a scrum team developing a component _Transaction Processor_ that process financial transactions.
 
-The _Transaction Processor_ allows users to import financial transactions (each transaction is either of type debit or credit), also it shall handle transactions in different formats; namely CSV (comma-separated values) and XML.
-Once the transactions are imported, the system can validate them and reports back any violation; _Violation_ is defined in case that file contains an invalid transaction record e.g. Invalid transaction type, missing amount...etc.
+The _Transaction Processor_ allows users to import financial transactions (each transaction is either of type debit or credit), it shall handle transactions in different formats; namely CSV (comma-separated values) and XML.
+Once the transactions are imported, the system can validate them and reports back any violation; _Violation_ is defined in case that file contains an invalid transaction record e.g. Invalid transaction type, missing amount...etc. The component can also check if the loaded transactions are balanced or not; the balanced transactions means that sum of Credit transactins must equals the sum of Debit transactions.
 
 
 ### Implementation Details

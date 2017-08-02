@@ -22,7 +22,7 @@ public class XmlTransactionProcessorTest {
 
     @Before
     public void setUp() {
-        xmlTransactionProcessor = new XmlTransactionProcessor();// replace the null with your XML implementation class
+        xmlTransactionProcessor = null;// replace the null with your XML implementation class
     }
 
     @Test

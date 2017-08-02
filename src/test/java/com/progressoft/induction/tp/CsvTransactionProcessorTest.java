@@ -22,7 +22,7 @@ public class CsvTransactionProcessorTest {
 
     @Before
     public void setUp() {
-        csvTransactionProcessor = new CsvTransactionProcessor();// replace the null with your CSV implementation class
+        csvTransactionProcessor = null;// replace the null with your CSV implementation class
     }
 
     @Test

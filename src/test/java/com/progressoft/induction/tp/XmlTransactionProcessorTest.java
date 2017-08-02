@@ -1,6 +1,5 @@
 package com.progressoft.induction.tp;
 
-import com.progressoft.induction.tp.impl.XmlTransactionProcessor;
 import org.junit.Before;
 import org.junit.Test;
 

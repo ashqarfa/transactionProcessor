@@ -2,14 +2,14 @@ package com.progressoft.induction.tp;
 
 import java.math.BigDecimal;
 
-/**
- * Created by Ahmad Y. Saleh on 7/24/17.
- */
 public class Transaction {
-
     private String type;
     private BigDecimal amount;
     private String narration;
+
+    public Transaction(){
+
+    }
 
     public Transaction(String type, BigDecimal amount, String narration) {
         this.type = type;

@@ -1,8 +1,5 @@
 package com.progressoft.induction.tp;
 
-/**
- * Created by Ahmad Y. Saleh on 7/24/17.
- */
 public class Violation {
 
     private int order;

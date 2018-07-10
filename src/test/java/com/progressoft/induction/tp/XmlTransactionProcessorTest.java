@@ -12,16 +12,13 @@ import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.collection.IsIterableContainingInAnyOrder.containsInAnyOrder;
 import static org.junit.Assert.assertEquals;
 
-/**
- * Created by Ahmad Y. Saleh on 7/24/17.
- */
 public class XmlTransactionProcessorTest {
 
     private TransactionProcessor xmlTransactionProcessor;
 
     @Before
     public void setUp() {
-        xmlTransactionProcessor = null;// replace the null with your XML implementation class
+        xmlTransactionProcessor = new XMLProcessor();
     }
 
     @Test
@@ -31,8 +28,13 @@ public class XmlTransactionProcessorTest {
                 "    <Transaction type=\"D\" amount=\"200\" narration=\"rent\" />\n" +
                 "    <Transaction type=\"D\" amount=\"800\" narration=\"other\" />\n" +
                 "</TransactionList>");
+
+        long start = System.currentTimeMillis();
+
         xmlTransactionProcessor.importTransactions(is);
         List<Transaction> transactions = xmlTransactionProcessor.getImportedTransactions();
+
+        long end = System.currentTimeMillis();
 
         assertThat(transactions, containsInAnyOrder(
                 newTransaction("D", new BigDecimal(200), "rent"),

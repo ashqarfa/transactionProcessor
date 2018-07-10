@@ -1,0 +1,5 @@
+<TransactionList>
+    <Transaction type="C" amount="1000" narration="salary" />
+    <Transaction type="D" amount="200" narration="rent" />
+    <Transaction type="D" amount="800" narration="other" />
+</TransactionList>

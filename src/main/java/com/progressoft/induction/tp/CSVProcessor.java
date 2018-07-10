@@ -32,8 +32,6 @@ public class CSVProcessor extends TransactionProcessorImpl {
         String narration = csvRecord.get(2);
         BigDecimal bdAmount = tryReadAmount(amount);
         return new Transaction(type, bdAmount, narration);
-        //test!! :) :) :)
-        //another test
     }
 }
 
